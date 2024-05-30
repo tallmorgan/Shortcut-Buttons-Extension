@@ -1,17 +1,28 @@
-/* Source:
-Thanks to https://github.com/hjdarnel/pivotal_markdown_link/blob/master/src/pmdl.css
-for figuring out the classes to target.
- */
-section.model_details .story .persistence.use_click_to_copy .close {
-  width: 65px !important;
+.attribute.story-id input {
+    text-indent: 24px;
 }
 
-section.model_details .actions button.clipboard_button.story-link::before {
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAlJJREFUaEPtlz9IllEUxn/OTpVQUUNL0BTYGBj2h6wtHBzVoE03FZcw07ForDVbI2oqMazAQRzEJQlcREokMp2clRP3xvXlfb/7l6/3pXvgRYdznnOe59x77vk6aLh1NLx+MoF/3cHcgdyBSAXyEYoUMDo8dyBawkiA3IFIAaPD/6sO9APdxnfWIt8MMK185O+UxX8bWAHWgHXgnUt7XDpwAngGDLsAGj6PCwQeecbPAw8AIVZpNgI3gEXPxNo9loDGGQJeVdXQisAgMGcEbgHPgW/AKrDjQOxQ+diEErfTwGX1TQJdBv5N4FNZvirgc8API0CIjAAHDkWncDkFvAV6DLCTwH4RvIrAB+COcl4CrqWoKgDjJSBHSEz+v+9C4J5iL767wCXgd0DyFCGdwFfgggIbAF6bwGUdeAjMKqcJ4GmKSiIwxoEnKl6m4ZiNwBtAZr5YH7BgSV4cj3JxXS6thpVp1cruAu+VwzJw1UZALq9cYrEzwE9Lgs9Ab6DCX4DrltiLwIbhc0ycMqXqRkBqN+vUo/kPpzIC5hG6DXy0KKTXhcAm/F03JN4szukY1u0SJyFgjtFfaozuhcrrGZeEgOSURUomkFg7H7JkBM4D3w315BUcbcMqkYyA1C5PuBSubRN44bnMeZ6gNJfYTHrLYQpVFWmu00WfY6PQk6X1HSjiyRYoT7heqlzz1YaALljWiyvqk5+W8kq3stoRcFU+xi/pJY4pJDQ2EwhVLlVc7kAqJUNxGt8Bb+JOO7c3ahsDMoE2il2aKncgdyBSgcYfoSOxH2ExpWfXrwAAAABJRU5ErkJggg==');
-  background-size: 80%;
+.attribute.story-id .markdown-button {
+    position: absolute;
+    bottom: 8px;
+    left: 3px;
+    background: #191e29;
+    display: flex;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
-section.model_details .actions button.clipboard_button.story-title::before {
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAALlJREFUaEPtlUEKgDAMBKMfVz+uIngQaWHDKlqdHksSk9lt7KLx0zXefzDA0wqiAAqYBH5lodmElU3vlYSMAotS8MIYqTcpaG+KAZLqSHCloK8okAE4RMR4SpgKd5maxdiMApmPMYBKCwUqpDb/bzY6Ht5ACRYWqliILcQWUglgIZMUW4gfGRYyCbCFTIBsISyEhUwCWMgEyBbCQi+1kNmWnn7XG9A7MCMZwARop6OAjdAsgAImQDt9Bb/YOzFEBh0UAAAAAElFTkSuQmCC');
-  background-size: 80%;
+.attribute.story-id .markdown-button::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='18' height='18' fill='rgba(255,255,255,1)'%3E%3Cpath d='M18.3638 15.5355L16.9496 14.1213L18.3638 12.7071C20.3164 10.7545 20.3164 7.58866 18.3638 5.63604C16.4112 3.68341 13.2453 3.68341 11.2927 5.63604L9.87849 7.05025L8.46428 5.63604L9.87849 4.22182C12.6122 1.48815 17.0443 1.48815 19.778 4.22182C22.5117 6.95549 22.5117 11.3876 19.778 14.1213L18.3638 15.5355ZM15.5353 18.364L14.1211 19.7782C11.3875 22.5118 6.95531 22.5118 4.22164 19.7782C1.48797 17.0445 1.48797 12.6123 4.22164 9.87868L5.63585 8.46446L7.05007 9.87868L5.63585 11.2929C3.68323 13.2455 3.68323 16.4113 5.63585 18.364C7.58847 20.3166 10.7543 20.3166 12.7069 18.364L14.1211 16.9497L15.5353 18.364ZM14.8282 7.75736L16.2425 9.17157L9.17139 16.2426L7.75717 14.8284L14.8282 7.75736Z'%3E%3C/path%3E%3C/svg%3E") 0 0 no-repeat;
+}
+
+.attribute.story-id .markdown-button.markdown-success::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='18' height='18' fill='rgba(255,255,255,1)'%3E%3Cpath d='M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z'%3E%3C/path%3E%3C/svg%3E");
 }
